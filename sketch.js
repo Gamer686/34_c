@@ -10,7 +10,6 @@ var ground;
 var superhero;
 var monster;
 var block1, block2, bock3, block4,block5,block6,block7,block8,block9,block10,block11,block12,block13,block14;
-
 function preload() {
 bgI = loadImage(" images/GamingBackground.png");
 
@@ -20,9 +19,9 @@ function setup() {
   createCanvas(900, 400);
   engine = Engine.create();
   world = engine.world;
-
+THrow= new Throw(superhero.body,{x:100,y:10});
   ground = new Ground (200,400,2000,5);
-  superhero = new Superhero(100,3,100,100);
+  superhero = new Superhero(100,300,100,100);
  block1 = new Block(280,350,30,40);
  block2 = new Block(310,350,30,40);
  block3 = new Block(340,350,30,40);
