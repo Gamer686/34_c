@@ -4,7 +4,7 @@ class Throw{
       var  options ={
           bodyA:bodyA,
           pointB:pointB,
-          length:250,
+          length:320,
           stiffness:1
       }
       this.throw=Constraint.create(options)
@@ -13,7 +13,7 @@ class Throw{
     display(){
         var anchorA = this.throw.bodyA.position
         var anchorB = this.throw.pointB
-        stroke("purple")
+        
         line(anchorA.x,anchorA.y,anchorB.x,anchorB.y)
     }
 }
